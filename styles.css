@@ -1,0 +1,145 @@
+body {
+    background-color: #f0f0f0; /* Heledamad toonid tapeedi moodi taustaks */
+    background-image: url("taust.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    background-image: url("taust.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    text-align: center;
+}
+
+}
+
+h1 {
+    font-size: 32px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    color: #333; /* Tekstide värvid */
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+#left-column {
+    flex: 1;
+    /* Ilutoa piltide ja galerii stiil */
+}
+
+#right-column {
+    flex: 1;
+    background-color: #fff; /* Valge taust */
+    padding: 20px;
+    border-radius: 5px; /* Äärised */
+}
+
+#social-media {
+    text-align: center;
+}
+
+#social-media a {
+    margin: 10px;
+}
+
+#map {
+    /* Google Maps kaart või pilti stiil */
+}
+
+#opening-hours {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#opening-hours h2 {
+    font-size: 24px;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .slider-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+  }
+  
+  .menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+    &:hover {
+      background: red;
+    }
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+  }
+  
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+  }
+  
+  .slide-1 {
+    background-image: url("pilt1.jpg");
+  }
+  .slide-2 {
+    background-image: url("pilt2.jpg");
+  }
+  .slide-3 {
+    background-image: url("pilt3.jpg");
+  }
+
+  .väikepilt {
+    width: 50px;
+    height: 50px;
+  }
