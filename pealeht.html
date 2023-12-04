@@ -10,8 +10,8 @@
     <header>
         <h1>Pealeht</h1>
         <nav>
-            <a href="armadillo.html" target="_blank" class="alapealkiri">Armadillo</a>
-            <a href="mookvaal.html" target="_blank" class="alapealkiri">Mõõkvaal</a>
+            <a href="armadillo.html" class="alapealkiri">Armadillo</a>
+            <a href="mõõkvaal.html" class="alapealkiri">Mõõkvaal</a>
         </nav>
     </header>
     <main>
@@ -38,10 +38,28 @@
                 <h2>Lehest:</h2>
                 <h3>Peetri ja Jüri südameloomad</h3>
                 <p>Veebileht sisaldab pealehte ja kahte alamlehte,
-                    kumbki ühe looma kohta. Siit lehelt saate edasi navigeeruda alamlehtedele.</p>
+                    kumbki ühe looma kohta. Siit lehelt saate edasi navigeerida alamlehtedele.</p>
                 <p>Alamlehtedele saate nii ülevalt menüüst kui ka valides pildi siit kõrvalt menüüst ning klikates selles.</p>
             </div>
         </section>
     </main>
+    <script>
+        // Hangime kõik elemendid klassiga "alapealkiri"
+        var navLinks = document.querySelectorAll('.alapealkiri');
+    
+        // Läbime iga lingi ja lisame hiire üle liikumise sündmuse kuulaja
+        navLinks.forEach(function(link) {
+            link.addEventListener('mouseover', function() {
+                // Suurendame fondi suurust, kui hiir linki kohale liigub
+                link.style.fontSize = '25px'; // Kohandage soovitud suurema fondi suurusega
+            });
+    
+            // Lisame hiire välja liikumise sündmuse kuulaja, et taastada fondi suurus, kui hiir lahkub lingi pealt
+            link.addEventListener('mouseout', function() {
+                // Taastame fondi suuruse algväärtusele
+                link.style.fontSize = '16px'; // Kohandage algset fondi suurust
+            });
+        });
+    </script>
 </body>
 </html>
