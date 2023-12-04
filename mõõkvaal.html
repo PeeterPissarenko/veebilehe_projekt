@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mõõkvaal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Mõõkvaal</h1>
-<p>Mõõkvaal on suurim delfiinlaste sugukonda kuuluv vaalaline. Ta on tippkiskja, kes on tuntud oma mustvalge mustri poolest. Sarnaselt delfiinidega on mõõkvaalad targad ja väga sotsiaalsed loomad, kes elavad perekondlikes gruppides.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Killerwhales_jumping.jpg" alt="Mõõkvaala pilt">
+    <header>
+        <h1>Mõõkvaal</h1>
+        <nav>
+            <a href="pealeht.html" class="alapealkiri">Pealehele</a>
+            <a href="armadillo.html" class="alapealkiri">Armadillo</a>
+        </nav>
+    </header>
+    <main>
+        <section id="left-column">
+            <div id="pildid">
+                <img src="mõõkvaal/pilt1.jpg" alt="ü">
+                <p>Mõõkvaal (orca)</p>
+            </div>
+        </section>
+        <section id="right-column">
+            <div id="jutukast">
+                <h2>Mõõkvaal</h2>
+                <p>Mõõkvaal,tuntud ka kui orka, on suurim delfiinlaste sugukonda kuuluv vaalaline. Ta on tippkiskja, kes on tuntud oma mustvalge mustri poolest. 
+                    Sarnaselt delfiinidega on mõõkvaalad targad ja väga sotsiaalsed loomad, kes elavad perekondlikes gruppides.</p>
+                <h3>Välimus</h3>
+                <p>Mõõkvaalad on musta ja valge värvusega ning neid on lihtne eristada teistest delfiiniliikidest nende silueti järgi. 
+                    Neil on iseloomulikud valged laigud silmade ümber ning nende uimede otsad on tavaliselt valged.</p>
+                <h3>Leviala</h3>
+                <p>Mõõkvaalad elavad kogu maailmameres erinevatel sügavustel, kuid on leitud, et nende populatsioonid on suuremad külmemates vetes, 
+                    kus nende toidulaual on rohkem suuri saakloomi.</p>
+                <h3>Toitumine</h3>
+                <p>Orkad on tippkiskjad ja nende toidulaual on kalad, veelinnud, mereimetajad ning isegi teised vaalad ja haid. 
+                    Nad on tuntud oma koostööoskuste poolest, nad hangivad toitu gruppides ja jagavad seda isekeskis.</p>
+                <h3>Paljunemine</h3>
+                <p>Mõõkvaaladel puudub kindel paaritumisaeg, pojad võivad sündida aastaringselt. Tavaline tiinus kestab 15–18 kuud.
+                    Ema imetab poega umbes aasta. Pärast piimast võõrutamist on vaalapojad väga sõltuvad oma emast ning saavad iseseisvuse alles nelja aasta pärast.</p>
+                <h3>Veel huvitavat</h3>
+                <p>Mõõkvaaladel on inimesega sarnane eluaeg. Orkad võivad elada kuni 90 aastat, kusjuures emased elavad tavaliselt isastest kauem.</p>
+                <p>Mõõkvaaladel on oma keel. Orkad suhtlevad erinevate klikkide, vilede, pulseerivate kõnede, kiljumise ja kriuksumise kaudu. 
+                    Orkadel on oma pererühmades erinevad keeled.</p>
+                <p>Vaatamata oma suurusele mõõkvaalad väga kiired veeimetajad. Nad on võimelised saavutama kiirust kuni 55km/h</p>
+            </div>
+        </section>
+    </main>
+    <script>
+         // Hangime kõik elemendid klassiga "alapealkiri"
+        var navLinks = document.querySelectorAll('.alapealkiri');
+    
+        // Läbime iga lingi ja lisame hiire üle liikumise sündmuse kuulaja
+        navLinks.forEach(function(link) {
+            link.addEventListener('mouseover', function() {
+                // Suurendame fondi suurust, kui hiir linki kohale liigub
+                link.style.fontSize = '25px'; // Kohandage soovitud suurema fondi suurusega
+            });
+    
+            // Lisame hiire välja liikumise sündmuse kuulaja, et taastada fondi suurus, kui hiir lahkub lingi pealt
+            link.addEventListener('mouseout', function() {
+                // Taastame fondi suuruse algväärtusele
+                link.style.fontSize = '16px'; // Kohandage algset fondi suurust
+            });
+        });
+    </script>
 </body>
 </html>
